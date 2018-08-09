@@ -5,9 +5,10 @@ import slogan from '@/views/slogan'
 Vue.use(Router)
 
 export default new Router({
-  routes: [{
-    path: '/',
-    name: 'slogan',
-    component: slogan
-  }]
+    routes: [{
+        path: '/',
+        name: 'slogan',
+        component: slogan
+    }],
+    "mode": "history"
 })
