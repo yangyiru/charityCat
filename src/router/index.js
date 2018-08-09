@@ -1,15 +1,13 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import slogn from '@/views/slogn'
+import slogan from '@/views/slogan'
 
 Vue.use(Router)
 
 export default new Router({
-  routes: [
-    {
-      path: '/',
-      name: 'slogn',
-      component: slogn
-    }
-  ]
+  routes: [{
+    path: '/',
+    name: 'slogan',
+    component: slogan
+  }]
 })

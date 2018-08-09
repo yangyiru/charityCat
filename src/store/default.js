@@ -13,11 +13,11 @@ const defaultInfo = {
   mutations: {
     // 设置
     setInfo: (state, defaultName) => {
-        state.defaultName = defaultName;
+      state.defaultName = defaultName
     }
   },
-  actions: {  	
-  	
+  actions: {
+
   }
 }
 
