@@ -35,7 +35,7 @@
 
 ```html
 # clone the project
-https://github.com/yangyiru/charityCat.git
+git clone https://github.com/yangyiru/charityCat.git
 
 # install dependency
 npm install
