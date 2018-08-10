@@ -1,11 +1,16 @@
 // 基础配置  后续在拓展添加
-
 $bg: #ffddce;
 $btnBg: #fc8d59;
+// 创建PingFang SC 字体font-face
 
+$font-dir: "../assets/fonts/";
 
+@font-face {
+    font-family: "PingFangSC";
+    src: url("#{$font-dir}PingFangSCRegular.ttf") format("truetype");
+}
 
-
-
-
-
+@font-face {
+    font-family: 'HyleMiaoTIJ';
+    src: url("#{$font-dir}HYLeMiaoTiJRegular.ttf") format("truetype")
+}
