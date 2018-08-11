@@ -9,5 +9,6 @@ export default new Router({
     path: '/',
     name: 'slogan',
     component: slogan
-  }]
+  }],
+  'mode': 'history'
 })
