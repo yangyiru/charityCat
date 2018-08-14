@@ -1,29 +1,26 @@
 <template>
-  <div class="signup">
-    <div class="signup-container">
+  <div class="loginin">
+    <div class="loginin-container">
       <p class="title">欢迎加入公益猫</p>
-      <p class="title-sub">注册帐号</p>
+      <p class="title-sub">登录</p>
       <form action="" class="signup-form">
         <div class="input-container">
-          <label for="name">昵称:</label>
-          <input type="text" autocomplete="off" id="name" placeholder="请输入您的昵称">
+          <label for="name">邮箱:</label>
+          <input type="text" autocomplete="off" id="name" placeholder="请输入您的邮箱">
         </div>
         <div class="input-container">
           <label for="password">密码:</label>
           <input type="password" id="password" placeholder="请输入6位以上字符密码">
         </div>
-        <div class="input-container">
-          <label for="email">邮箱:</label>
-          <input type="text" autocomplete="off" id="email" placeholder="请输入您的常用邮箱">
-        </div>
-        <div class="input-container">
-          <label for="identify">验证码:</label>
-          <input type="text" id="identify" placeholder="请输入验证码">
-          <button class="identify">获取验证码</button>
-        </div>
-        <p>点击注册帐号，表示同意<a href="">服务条款</a>和<a href="">隐私条款</a></p>
-        <p><input type="submit" class="signup-btn" name="" id="" value="注册"></p>
-        <p>已有账号，直接<a href="/loginin">登录</a></p>
+        <p class="remenber">
+          <span>
+            <input type="checkbox" name="" id="">
+            30天记得我
+          </span>
+          <a href="/forget">忘记密码?</a>
+        </p>
+        <p><input type="submit" class="loginin-btn" name="" id="" value="登录"></p>
+        <p>已没有账号？<a href="">注册帐号</a></p>
       </form>
     </div>
   </div>
@@ -45,10 +42,10 @@ export default {
 <style scoped lang="scss">
 @import "../assets/style/variables.scss";
 
-  .signup{
+  .loginin{
     background: #ffffff;
     overflow: hidden;
-    .signup-container{
+    .loginin-container{
       width: 400px;
       height: auto;
       margin: 180px auto 0;
@@ -89,13 +86,9 @@ export default {
             border: 0;
             outline: none;
           }
-          .identify{
-            float: right;
-            margin-top: 10px;
-            @include btn(80px,30px,14px);
-          }
         }
         p{
+          margin-top: 30px;
           font-size: 16px;
           color: #666666;
           text-align: center;
@@ -104,14 +97,26 @@ export default {
             color: $btnBg;
           }
         }
-        p:first-of-type{
-          margin-top: 24px;
+        .remenber{
+          display: flex;
+          align-items: center;
+          text-align: left;
+          justify-content: space-between;
+          font-size: 12px;
+          color: $btnBg;
+          span{
+            display: flex;
+            align-items: center;
+            input{
+            width: 15px;
+            height: 15px;
+            border: 1px solid #999999;
+            border-radius: 3px;
+            background: #cccccc;
+            }
+          }
         }
-        p:last-of-type{
-          margin-top: 30px;
-        }
-        .signup-btn{
-          margin-top: 30px;
+        .loginin-btn{
           @include btn(350px, 60px, 30px);
         }
       }

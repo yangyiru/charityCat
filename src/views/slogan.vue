@@ -32,6 +32,7 @@ export default {
 <style lang="scss" scoped>
 @import "../assets/style/variables.scss";
 
+body{background-color: #ffddce;}
 .wrapper {
   background-color: $bg;
   height: 100%;
