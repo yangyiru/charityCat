@@ -12,7 +12,9 @@
         </blockquote>
       </section>
       <section class="button-group">
-        <button>加入我们</button>
+        <router-link to="/signup">
+          <button>加入我们</button>
+        </router-link>
         <button>逛逛社区</button>
       </section>
     </div>
@@ -60,14 +62,7 @@ export default {
   .button-group {
     text-align: center;
     button {
-      background-color: $btnBg;
-      border: none;
-      font-family:'PingFangSCRegular', sans-serif;
-      font-size: 24px;
-      color: #ffffff;
-      width: 200px;
-      height: 60px;
-      border-radius: 5px;
+      @include btn(200px, 60px, 30px);
     }
     button:first-child {
       margin-right: 45px;
