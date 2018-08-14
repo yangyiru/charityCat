@@ -14,3 +14,21 @@ $font-dir: "../assets/fonts/";
     font-family: 'HyleMiaoTIJ';
     src: url("#{$font-dir}HYLeMiaoTiJRegular.ttf") format("truetype")
 }
+//定义按钮
+
+@mixin btn($w, $h, $fs){
+  width: $w;
+  height: $h;
+  padding: 0;
+  line-height: $h;
+  background-color: $btnBg;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-family:'PingFangSCRegular', sans-serif;
+  font-size: $fs;
+  font-weight: 300;
+  color: #ffffff;
+  cursor: pointer;
+}
+
