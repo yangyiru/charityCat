@@ -35,7 +35,6 @@ export default {
 body{background-color: #ffddce;}
 .wrapper {
   background-color: $bg;
-  height: 100%;
   .slogan-container {
     width: 800px;
     margin:auto;
